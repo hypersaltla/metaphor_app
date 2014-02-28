@@ -1,0 +1,136 @@
+#method_choice
+{
+    width:400px;
+    margin-left:2px;
+    float:left;
+}
+
+#metaphor_list
+{
+    width:400px;
+    margin-left:2px;
+    float:left;
+}
+
+#source_bar
+{
+    width:200px;
+    float:left;
+}
+
+#method_choice
+{
+    float:left;
+    margin-left:10px;
+}
+
+#metaphor_list
+{
+   /* float:left;*/
+    width:95%;
+}
+
+#source
+{
+    width:95%;
+/*    border-right:1px dotted #A421C4; */
+}
+
+#extra_selection
+{
+    width:220px;
+    margin-left:2px;
+    float:left;
+/*border:1px dotted gray;*/
+}
+
+#targets
+{
+    width:inherit;
+}
+#metaphors
+{
+    width:inherit;
+}
+
+#result_top
+{
+    margin:auto;
+/*    border:2px solid green; */
+}
+#result_top span
+{
+    font-size:25px;
+    color:#8E95B1;
+}
+
+#metaphor_section #domain_section #emotion_section
+{
+    width:625px;
+}
+
+#metaphor_line
+{
+    width:625px;
+    float:left;
+}
+#domains
+{
+    width:625px;
+}
+
+#domain_statistics
+{
+    width:100%;
+}
+
+#topn
+{
+    width:625px;
+}
+
+.small_cell
+{
+    font-size:15px;
+    /*height:20px;*/
+    padding-top:2px;
+    margin-left:4px;
+    float:left;
+}
+
+.title_cell
+{
+    width:90%;
+    font-size:18px;
+    font-style:bold;
+    text-align:center;
+    border-bottom:1px solid #EAEAEA; 
+}
+
+.source_cell
+{
+    padding-left:3px;
+    width:90%;
+    border-bottom:1px solid #EAEAEA; 
+    /*cursor:pointer;*/
+}
+.target_cell
+{
+    width:90%;
+    border-bottom:1px solid #EAEAEA;
+    /*cursor:pointer;*/
+}
+
+.long_cell
+{
+    font-size:15px;
+/*    height:20px; */
+    padding-top:2px;
+    margin-left:2px;
+    float:left;
+}
+
+.metaphor_cell
+{
+    width:420px;
+}

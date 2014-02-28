@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/HTML; charset=utf-8">
+  <title>Metaphor Demo</title>
+  <link rel="stylesheet" type="text/css" href="css/frame.css">
+  <link rel="stylesheet" type="text/css" href="css/detail.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]});
+  </script>
+      <script type="text/javascript" src="js/DataItem.js"></script>
+      <script type="text/javascript" src="js/Displayer.js"></script>
+  <script type="text/javascript" src="js/Pager.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="head">
+          <div style="float:left"><span>Metaphor Demo</span></div>
+          <div style="float:right">
+              <ul id="navigation_bar">
+                  <li id="English_choice" onclick="loadPage('EN')" >English</li>
+                  <li id="Spanish_choice" onclick="loadPage('SP')">Spanish</li>
+                  <li id="Russian_choice" onclick="loadPage('RU')">Russian</li>
+                  <li id="Farsi_choice" onclick="loadPage('FA')">Farsi</li>
+              </ul>
+          </div>
+          <div class="empty"></div>
+      </div>
+      <div id="content">
+        <div id="side_bar">
+      <!--    <div id="source_title" class="cell small_cell title_cell">source</div> -->
+            <div id="method_choice">
+                <select id="selected_method">
+                    <option value="source" selected="selected">Display by source list</div>
+                    <option value="metaphor">Display by metaphor list</div>
+                </select>
+            </div>
+            <div id="metaphor_list">
+            </div>
+          <div id="source_bar">
+            <div id="source">
+            </div>
+          </div>
+          <div id="extra_selection">
+	    <div id="targets"></div>
+	    <div id="metaphors"></div>
+          </div>
+          <div class="empty">
+          </div>
+        </div>
+        <div id="showcase">
+          <div id="search_bar">
+          <!--  <div class="small_cell title_cell"> -->
+                <input type="text" id="s_box_m" placeholder="Please input any sentence and press 'Enter'">
+         <!--   </div> -->
+          </div>
+          <div id="query_results">
+            <div id="result_top">
+                <span id="cur_source">Source</span><span>&nbsp;===&gt;&nbsp;</span><span id="cur_target">Target</span>
+            </div>
+            <div id="metaphor_section">
+                <div id="metaphor_line">
+                  <div class="long_cell metaphor_cell" id="line_c_1"></div>
+                  <div class="small_cell" id="line_c_2" style="margin-left:5px; float:right"></div>
+                </div>
+                <div class="empty"></div>
+            </div>
+            <div id="emotion_section">
+            </div>
+            <div id="domain_section">
+                <div id="line_c_3" style="float:left; cursor:pointer"></div>
+                <div id="domain_statistics" style="float:left; margin-left:2px">
+                </div>
+                <div class="empty"></div>
+            </div>
+            <div id="topn">
+                <div class="small_cell" id="line_c_4" style="float:left; margin-left:2px; cursor:pointer"></div>
+                <div id="topn_content" style="float:left; margin-left:2px; cursor:pointer"></div>
+                <div class="empty"></div>
+            </div>
+          </div>
+        </div>
+        <div class="empty"></div>
+      </div>
+    </div>
+  </body>
+</html>
